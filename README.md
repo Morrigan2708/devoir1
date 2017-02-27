@@ -3,7 +3,8 @@
 ##Vos informations
 
 *Veuillez inscrire votre nom complet ici et l'URL d'accès à votre application sur Heroku ici*
-
+Amaury Trassaert
+https://devoirphoto.herokuapp.com/
 
 ##Correction 
 
