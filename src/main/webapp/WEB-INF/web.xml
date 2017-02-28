@@ -5,6 +5,13 @@
 
 <web-app >
 
+	
+
+	<init-param>
+		<param-name>auteur</param-name> 
+		<param-value>Amaury Trassaert</param-value> 
+	</init-param>
+	
   <display-name>Devoir Photo</display-name>
 
 <description>Application correspondant au devoir 1 de GTI 525. </description>
