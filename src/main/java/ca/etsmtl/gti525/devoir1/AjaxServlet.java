@@ -22,14 +22,25 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.swing.ImageIcon;
 
+@WebServlet("/AjaxServlet");
 public class AjaxServlet extends HttpServlet {
+	private Collection collection = new Collection();
 	
+	public AjaxServlet(){
+		super();
+	}
 
 	public void doPost(HttpServletRequest req, HttpServletResponse res) {
 		
 	}
 
 	public void doGet(HttpServletRequest req, HttpServletResponse res) {
+		response.setContentType("text/html");
+		PrintWriter writer = res.getWriter();
+		out.println("<HTML>");
+		out.println("<HEAD><TITLE>Affichage des images</TITLE></HEAD>");
+		out.println("<BODY>");
+		
 		
 			}
 
