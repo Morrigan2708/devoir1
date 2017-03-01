@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.swing.ImageIcon;
 
-@WebServlet("/AjaxServlet")
+
 public class AjaxServlet extends HttpServlet {
 	private Collection collection = new Collection();
 	private static final long serialVersionUID = -8308514275340556375L;
@@ -25,7 +25,7 @@ public class AjaxServlet extends HttpServlet {
 	}
 
 	public void doGet(HttpServletRequest req, HttpServletResponse res) {
-		response.setContentType("text/html");
+		
 		
 		
 		
