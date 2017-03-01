@@ -37,10 +37,7 @@ public class AjaxServlet extends HttpServlet {
 
 	public void doGet(HttpServletRequest req, HttpServletResponse res) {
 		response.setContentType("text/html");
-		PrintWriter writer = res.getWriter();
-		out.println("<HTML>");
-		out.println("<HEAD><TITLE>Affichage des images</TITLE></HEAD>");
-		out.println("<BODY>");
+		
 		
 		
 			}
