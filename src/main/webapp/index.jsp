@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Démo AJAX + J2EE + web.xml</title>
+    <title>GTI525, Projet photo, hiver 2017</title>
   </head>
   <body>
     <p>
