@@ -16,18 +16,18 @@ import javax.swing.ImageIcon;
 
 public class AjaxServlet extends HttpServlet {
 	private Collection collection = new Collection();
-	private static final long serialVersionUID = -4865099303373864287L;
+	private static final long serialVersionUID = -4865099303373864286L;
 	
 	public AjaxServlet(){
 		super();
 	}
 
-	public void doPost(HttpServletRequest request, HttpServletResponse response) {
+	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
 		doGet(request, response);
 		
 	}
 
-	public void doGet(HttpServletRequest request, HttpServletResponse response) {
+	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
 		
 		Collection collection = new Collection();
 		if (!(request.getParameter("listeImages") == "" || request.getParameter("listeImages") == null)) {
