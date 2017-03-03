@@ -33,7 +33,7 @@
 		
 		<init-param>
 	      		<param-name>message</param-name>
-	    		<param-value>Vous devez acheter cette image pour afficher l'original</param-value>
+	    		<param-value>Vous devez acheter cette image pour afficher l'originale</param-value>
 	    	</init-param>
 	
 		<init-param>
