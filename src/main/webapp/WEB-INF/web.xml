@@ -17,36 +17,57 @@
 <description>Application correspondant au devoir 1 de GTI 525. </description>
 
 
-<servlet>
+	<servlet>
 		<servlet-name>AjaxServlet</servlet-name>
 		<servlet-class>ca.etsmtl.gti525.devoir1</servlet-class>
+	
+		<init-param>
+	        	<param-name>dossierVignettes</param-name>
+	    		<param-value>vignettes</param-value>
+	    	</init-param>
 	</servlet>
 
-<servlet>
+	<servlet>
 		<servlet-name>WatermarkServlet</servlet-name>
 		<servlet-class>ca.etsmtl.gti525.devoir1</servlet-class>
+	
+		<init-param>
+	      		<param-name>message</param-name>
+	    		<param-value>Vous devez acheter cette image pour afficher l'original</param-value>
+	    	</init-param>
+	
+		<init-param>
+	        	<param-name>dossierVignettes</param-name>
+	    		<param-value>vignettes</param-value>
+	    	</init-param>
+	    
+	    	<init-param>
+	        	<param-name>dossierOriginaux</param-name>
+	    		<param-value>dossierUltraTopSecret</param-value>
+	    	</init-param>	    
+	    
 	</servlet>
 
   
-<servlet-mapping>
+	<servlet-mapping>
 		<servlet-name>WatermarkServlet</servlet-name>
 		<url-pattern>/WatermarkServlet</url-pattern>
 	</servlet-mapping>
 
   
-<servlet-mapping>
+	<servlet-mapping>
 		<servlet-name>AjaxServlet</servlet-name>
 		<url-pattern>/AjaxServlet</url-pattern>
 	</servlet-mapping>
 
   
-<error-page>
-	  <error-code>404</error-code>
-	  <location>/error.jsp</location>
-  </error-page>
+	<error-page>
+		<error-code>404</error-code>
+		<location>/error.jsp</location>
+  	</error-page>
   
- <welcome-file-list>  
-<welcome-file>/index.jsp</welcome-file> 
-</welcome-file-list>
+	<welcome-file-list>  
+		<welcome-file>/index.jsp</welcome-file> 
+	</welcome-file-list>
   
   </web-app>
