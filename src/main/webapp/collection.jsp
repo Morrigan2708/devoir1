@@ -16,7 +16,7 @@ x#<!--
 <!DOCTYPE html>
 <html>
 <head>
-<title>Démo AJAX - J2EE</title>
+<title>GTI525, Projet photo, hiver 2017</title>
 
 <script>
 	function appelAjax(strURL) {
