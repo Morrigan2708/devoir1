@@ -32,12 +32,12 @@ public class AjaxServlet extends HttpServlet {
 		Collection collection = new Collection();
 		if (!(request.getParameter("listeImages") == "" || request.getParameter("listeImages") == null)) {
 
-			Integer idPhoto = Integer.parseInt(req.getParameter("listeImages"));
-			Photo photo = collection.getPhoto(idPhoto);
+			Integer idImage = Integer.parseInt(request.getParameter("listeImages"));
+			Image image = collection.getImage(idImage);
 
 			response.setContentType("text/html");
 
-			request.setAttribute("photo", photo);
+			request.setAttribute("image", image);
 			request.setAttribute("dossierVignettes", getServletConfig().getInitParameter("dossierVignettes"));
 
 			RequestDispatcher RequetsDispatcherObj = getServletContext().getRequestDispatcher("/details.jsp");
