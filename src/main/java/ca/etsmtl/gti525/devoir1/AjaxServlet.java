@@ -30,7 +30,32 @@ public class AjaxServlet extends HttpServlet {
 	public void doGet(HttpServletRequest request, HttpServletResponse response) {
 		
 		Collection collection = new Collection();
-		
+		if (!(request.getParameter("listeImages") == "" || request.getParameter("listeImages") == null)) {
+
+			Integer idPhoto = Integer.parseInt(req.getParameter("listeImages"));
+			Photo photo = collection.getPhoto(idPhoto);
+
+			response.setContentType("text/html");
+
+			request.setAttribute("photo", photo);
+			request.setAttribute("dossierVignettes", getServletConfig().getInitParameter("dossierVignettes"));
+
+			RequestDispatcher RequetsDispatcherObj = getServletContext().getRequestDispatcher("/details.jsp");
+			RequetsDispatcherObj.include(request, response);
+
+		} else {
+			if (request.getParameter("listeImages") != null) {
+				if (request.getParameter("listeImages").isEmpty() || request.getParameter("listeImages") == "") {
+					RequestDispatcher RequetsDispatcherObj = getServletContext().getRequestDispatcher("/error.jsp");
+					RequetsDispatcherObj.forward(request, response);
+				}
+			} else {
+				request.setAttribute("collection", collection.getImages());
+
+				RequestDispatcher RequetsDispatcherObj = getServletContext().getRequestDispatcher("/collection.jsp");
+				RequetsDispatcherObj.forward(request, response);
+			}
+		}
 		
 		
 			}
