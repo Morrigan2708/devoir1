@@ -52,7 +52,7 @@
 
 	<servlet-mapping>
 		<servlet-name>WatermarkServlet</servlet-name>
-		<url-pattern>/WatermarkServlet</url-pattern>
+		<url-pattern>/Watermark</url-pattern>
 	</servlet-mapping>
 
   
