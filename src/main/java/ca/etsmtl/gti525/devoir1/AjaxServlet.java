@@ -16,18 +16,19 @@ import javax.swing.ImageIcon;
 
 public class AjaxServlet extends HttpServlet {
 	private Collection collection = new Collection();
-	private static final long serialVersionUID = -98738739879470379874L;
+	private static final long serialVersionUID = -4865099303373864287L;
 	
 	public AjaxServlet(){
 		super();
 	}
 
-	public void doPost(HttpServletRequest req, HttpServletResponse res) {
+	public void doPost(HttpServletRequest request, HttpServletResponse response) {
 		
 	}
 
-	public void doGet(HttpServletRequest req, HttpServletResponse res) {
+	public void doGet(HttpServletRequest request, HttpServletResponse response) {
 		
+		Collection collection = new Collection();
 		
 		
 		
